@@ -9,12 +9,12 @@ class plasticClassifier:
     config = 'resources/yolov3-obj.cfg'
     weights = 'resources/yolov3-obj_final.weights'
     object_classes = 'resources/obj.names'
-    file_object = open("BoundingBoxes.txt", "w")
     conf_threshold = 0.5
     nms_threshold = 0.3
     path = ''
     classes = None
     COLORS = None
+    file_object = None
 
     def __init__ (self, conf, nms, path):
         self.conf_threshold = conf
@@ -115,6 +115,7 @@ class plasticClassifier:
         # apply non-max suppression
         indices = cv2.dnn.NMSBoxes(boxes, confidences, self.conf_threshold, self.nms_threshold)
 
+        self.file_object = open("BoundingBoxes.txt", "w")
 
         # go through the remaining detections
         # after nms and draw bounding box
@@ -126,9 +127,11 @@ class plasticClassifier:
             w = box[2]
             h = box[3]
             
-            self.output_bounding_box(image, class_ids[i], confidences[i], x, y, w, h)   
+            self.output_bounding_box(image, class_ids[i], confidences[i], x, y, w, h)  
+
         # save output image to disk
         cv2.imwrite("object-detection.jpg", image)
+        self.file_object.close()
 
         print('Executed in %s seconds.' % (time.time() - start_time))
 

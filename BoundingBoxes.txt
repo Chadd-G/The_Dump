@@ -1,36 +1,60 @@
-metal_can 99.8%
-Center X: 536
-Center Y: 201
-Width: 225
-Height: 267
+water_bottles 99.9%
+Center X: 1579
+Center Y: 473
+Width: 290
+Height: 373
 
-metal_can 99.8%
-Center X: 793
-Center Y: 893
-Width: 224
-Height: 330
+water_bottles 99.7%
+Center X: 583
+Center Y: 596
+Width: 377
+Height: 358
 
-milk 99.6%
-Center X: 245
-Center Y: 279
-Width: 459
-Height: 491
+water_bottles 99.6%
+Center X: 158
+Center Y: 518
+Width: 310
+Height: 387
 
-metal_can 98.5%
-Center X: 969
-Center Y: 535
-Width: 263
-Height: 251
+milk 99.5%
+Center X: 1211
+Center Y: 837
+Width: 504
+Height: 501
 
-water_bottles 97.8%
-Center X: 1696
-Center Y: 224
-Width: 446
-Height: 458
+water_bottles 99.2%
+Center X: 1786
+Center Y: 263
+Width: 274
+Height: 394
 
-water_bottles 75.4%
-Center X: 1381
-Center Y: 71
-Width: 362
-Height: 137
+milk 99.1%
+Center X: 271
+Center Y: 879
+Width: 501
+Height: 385
+
+water_bottles 97.9%
+Center X: 815
+Center Y: 873
+Width: 498
+Height: 172
+
+water_bottles 97.4%
+Center X: 627
+Center Y: 989
+Width: 415
+Height: 172
+
+water_bottles 97.1%
+Center X: 895
+Center Y: 700
+Width: 425
+Height: 207
+
+water_bottles 93.3%
+Center X: 719
+Center Y: 238
+Width: 286
+Height: 456
 
