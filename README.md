@@ -26,12 +26,26 @@ C:\Path\To\Env\Scripts\activate
 
 Add the necessary files into the resources folder. The .cfg and .names files are included, But the .weights file will need to be [downloaded](https://drive.google.com/open?id=1wjsJfALPRW9w1FvDqGvXg4aZbWUEO7ef).
 
-## Running
+## Running the GUI
 To run this program first activate the virtual environment and then run the Plastic_Classifier_GUI.py file.
 
 ```bash
 C:\Path\To\Env\Scripts\activate
 (Env) python Plastic_Classifier_GUI.py
+```
+
+## Running from the command line
+To run from the command line:
+
+```bash
+C:\Path\to\Env\Scripts\activate
+(Env) python plasticClassifier.py -i C:\Path\to\Image\file
+```
+
+In the above code we only give the image path, there are other option that can be given such as confidence value, non maximum supression value, or using custom classes, weights, and cfg files. To see these options in full:
+
+```bash
+(Env) python plasticClassifier.py --help
 ```
 
 ## Utilizing BoundingBoxes.txt
